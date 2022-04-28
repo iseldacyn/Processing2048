@@ -41,16 +41,16 @@ void keyPressed(){
   if(lose){
     return;
   }
-  if(key == 'w'){
+  if(key == 'w' || keyCode == UP){
     moveBlocks('u');
   }
-  if(key == 'a'){
+  if(key == 'a' || keyCode == LEFT){
     moveBlocks('l');
   }
-  if(key == 's'){
+  if(key == 's' || keyCode == DOWN){
     moveBlocks('d');
   }
-  if(key == 'd'){
+  if(key == 'd' || keyCode == RIGHT){
     moveBlocks('r');
   }
 }
